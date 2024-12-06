@@ -1,0 +1,472 @@
+body{
+	background-color: #fff;
+	font-family: 'Roboto' , san-serif;
+	color: orange;
+}
+
+a{
+	color: brown;
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 500;
+	margin:0;
+}
+p{
+	margin:0;
+}
+
+p+p{
+	margin-top:15px;
+}
+
+.img{
+	max-width:100%;
+}
+
+.container{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.btn{
+	margin: 0;
+	font-weight: 500;
+	font-size: 16px;
+	width: 165px;
+	height: 50px;
+	text-transform: uppercase;
+
+	display: flex;
+	justify-content: center;
+	align-items : center;
+
+	background-color: #DF7861;
+	color: #fff;
+	border-radius: 5px;
+
+	transition: opacity 0.3s;
+}
+.btn:hover{
+	opacity: 0.8;
+}
+
+.header{
+	padding: 25px 0;
+
+}
+
+.header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items : center;
+}
+
+.logo{
+	width: 150px;
+	height: auto;
+	border-radius: 50%;
+     margin-bottom: 15px;
+}
+
+.header_list{
+	display: flex;
+	gap: 30px;
+	font-size:  24px;
+	text-transform: uppercase;
+}
+
+.header_nav a:hover{
+	opacity: 0.9;
+	transition: 3s;
+
+}
+
+.header_nav a{
+	font-size: 14px;
+	opacity: 0.7;
+}
+
+.header_nav a.active{
+	font-size: 14px;
+	opacity: 1;
+}
+.header_nav a.active:hover{
+	font-size: 14px;
+	opacity: 0.9;
+}
+.welcome{
+	margin-top: -250px;
+	padding: 240px 0;
+
+	background-image: url("https://s3-alpha-sig.figma.com/img/5344/d62f/0369f714d60a1c6704fe01f5c9820865?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VjdNHTRqIa1IncPlT32WoYoI~9buOqsbq12D5hWgZDB2F-5I~fhJBrxNKF3RQLHYsnm8tB0wXuJZZUh4BBYpnm2-HUSsL6Vg1J1EkCTMTxzf744-U5GWoDgbVa1QbGhA3Y9NIITDYPPt7hyTSOwhl3H-dkRkdV8cJVBgEOeij3NB-yx7ZTUPtljc8qf6khiLq~2tuVkXDLWucgLTZkYX0WYzumkiEHH1JbMZbYAm0HvcNCV1vLo6z6v1BHsewoNzkgdUhrPw7m051Lap4HRcfM5M319sJF7XZCec2yMhm509tAlbjX1FI7KDBt2dFkYmb3eL2-jR6~cODVl9AWjcig__");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+.welcome_text{
+	width:550px;
+}
+
+.welcome_subtitle{
+	margin-bottom: 7px;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+
+.welcome_title{
+	font-size: 58px;
+}
+
+.welcome_desc{
+	margin: 40px 0;
+	font-size: 18px;
+	opacity:0.7;
+}
+/* список стран */
+
+#destinations {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #F7B5CA;
+    color: white;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+#tours{
+	text-align: center;
+    margin: 20px 0;
+    background-color: #B4E4FF;
+    color: white;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+
+#destinations:hover ,#tours:hover{
+    opacity: 0.8;
+}
+.country-List {
+	padding: 100px 0;
+}
+
+.country-List .container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 40px 10px;
+}
+
+.country-list-card {
+	width: 260px;
+	background-color: #F7B5CA;
+	border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+	 transition: opacity 0.3s
+}
+
+.country-list-card:hover {
+    opacity: 0.8;
+}
+
+
+.country_list_img {
+	width: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+}
+
+.country-list_title {
+	font-size: 20px;
+	margin: 15px 0;
+	color: white;
+}
+
+.text {
+	padding: 20px;
+}
+
+.country-list_desc {
+	color: white;
+	opacity: 0.8;
+	font-size: 15px;
+}
+
+/* tour list*/
+.tours {
+    padding: 100px 0;
+}
+
+.tours .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.tour_card {
+    width: 40%;
+    min-height: 400px;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F7B5CA;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.tour_card:nth-child(even) {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tour_title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.tour_desc {
+    opacity: 0.85;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 16px;
+}
+
+.tour_price {
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #fff;
+    font-size: 18px;
+}
+
+.tour_old_price {
+    text-decoration: line-through;
+    opacity: 0.7;
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.btn--small {
+    width: 160px;
+    height: 45px;
+    font-size: 14px;
+    background-color: #DF7861;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition:  0.3s ;
+}
+
+.btn--small:hover {
+    background-color: #c0674e;
+}
+
+.card_culture {
+    background-image: url("https://travelbelka.ru/wp-content/uploads/2019/02/mosque-3905675_1280-696x464.jpg");
+}
+
+.card_beach {    background-image: url("https://s7g10.scene7.com/is/image/barcelo/peloponnese-peninsula_peloponnese-region?&&fmt=webp-alpha&qlt=75&wid=1100&fit=crop,1");
+
+}
+
+.card_gastro {
+    background-image: url("https://o-da.by/wp-content/uploads/2023/10/italyanskaya-kuhnya-min-1024x667.jpg");
+}
+
+.card_history {
+    background-image: url("https://voyagejapan.com/getimg/940/451/crop/fill/files/core/541_image.jpg");
+}
+
+
+/*  feedback*/
+
+.feedback {
+    padding-bottom: 220px;
+    background-color: #FFD09B;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 880px;
+    margin: 0 auto; 
+}
+
+.feedback_img {
+    width: 250px; 
+    height: 200px; 
+    border-radius: 50%; 
+}
+
+.feedback_text {
+    margin: 0;
+    text-align: center;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px; 
+    overflow: hidden;
+	color:white;
+}
+
+
+.feedback_desc {
+    margin: 30px 0;
+    opacity: 0.7;
+}
+
+.feedback_author {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}
+ .feedback_subauthor{
+	 font-weight: 500;
+	 font-size: 12px;
+	 opacity: 0.7;
+	 display: block;
+	 color:white;
+ }
+
+/* footer */
+.footer {
+    background-color: #f8f8f8; 
+    padding: 120px 0; 
+}
+
+.footer a{
+	font-size: 12px;
+	color: orange/*change color */
+	
+	
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.footer .footer_title{
+	display: inline-black;
+	margin-bottom:15px;
+	font-weight:500;
+	font-size: 16px;
+	color: orange;
+	
+}
+
+.footer .container {
+	display:grid;
+	grid-template-columns: 1fr 3fr  1fr;
+	
+}
+
+
+
+.footer_logo {
+    width: 150px;
+	height: auto;
+	border-radius: 50%;
+     margin-bottom: 15px;
+}
+}
+
+.footer_link{}
+
+
+.footer_nav {
+  
+}
+
+.footer_list {
+	display:grid;
+	grid-template-columns: 1fr 3fr  1fr;
+   
+}
+
+.footer_list_title {
+   
+}
+
+.footer_inner_list {
+   
+}
+
+.list_inner {
+}
+
+.list_inner a {
+}
+
+.footer_newsletter {
+}
+
+.footer_news {
+   
+}
+
+.newsletter_input {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    
+}
+.footer_newsletter {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.footer_news {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.newsletter_input {
+    width: 250px;
+    max-width: 300px;
+    height: 200px; 
+    
+}
+
+.submit-btn {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: solid-black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: orange;
+}
